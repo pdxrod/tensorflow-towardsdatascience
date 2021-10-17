@@ -15,7 +15,7 @@ Various people helped me, none of them at Apple. Except for one  online chat guy
 
 `https://developer.apple.com/forums/thread/686926?page=1#685386022`
 
-which might contain a solution to my problem, because I'd changed my phone number, having moved to a different country (I do that a lot), and the only way developer.apple.com would let me in would be by sending me a code on my old phone. Anyway, the guy on the chat line enabled me to send them a message, and they say they might be able to let me in some time today.
+which might contain a solution to my problem, because I'd changed my phone number, having moved to a different country (I do that a lot), and the only way developer.apple.com would let me in would be by sending me a code on my old phone. Anyway, the guy on the chat line enabled me to send them a message, and they say they might be able to let me in some time today. No, Apple sent me an email: "You will receive a text or a phone call at this number when your account is ready to recover on October 15, 2021 at 12:23:40 PM." That's in one month.
 
 Meantime, I figured out how to do what I wanted, with no help from Apple.
 
@@ -74,11 +74,9 @@ But if you put
 at the top, it figures it out.
 
 ```
-$conda activate apple_tensorflow
-
+$ conda activate apple_tensorflow
 $ which python
-
-/Users/rod/miniforge3/envs/apple_tensorflow/bin/python
+  /Users/rod/miniforge3/envs/apple_tensorflow/bin/python
 ```
 
 This is Python 3.9.6
@@ -97,11 +95,20 @@ At this point, I have to admit part of the delay was my bad. I didn't read the i
     conda install scikit-learn -y
     jupyter notebook
 
+It took me a while to figure out how to push this to Github. I kept getting 403's, even though I'd added a "Personal Access Token" to the URL of this project in .git/config.
 
-Soon, I'll be writing code like this
+stackoverflow.com was worse than useless - just a load of bureaucrats deleting comments cos they're not "answers" or whatever.
 
-https://colab.research.google.com/github/ageron/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb
+This site got it:
+https://mycyberuniverse.com/how-fix-fatal-authentication-failed-for-https-github-com.html
 
-and be head-hunted by DeepMind
 
-https://github.com/deepmind/alphafold
+My comment:
+
+OMFG
+
+Your point 6, "Select the scopes, or permissions, you’d like to grant this token. To use your token to access repositories from the command line, select repo."
+
+finally did it for me, after weeks of useless discussion on stackoverflow, and my comments being deleted by uptight administrators cos they're not "answers", or some other f***ing bureaucratic nonsense.
+
+WTF? A "token" is just an impossible-to-remember temporary password, so you have to keep a copy of it somewhere. It's less secure.
