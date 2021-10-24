@@ -59,7 +59,7 @@ And you do `conda activate apple_tensorflow` before running a Tensorflow program
 
 The program won't run like this:
 
-`/Users/rod/miniforge3/bin/python my_tensorflow_program.py`
+`$ /Users/rod/miniforge3/bin/python   my_tensorflow_program.py`
 
 Nor will it from from the command line if you put
 
@@ -95,20 +95,13 @@ At this point, I have to admit part of the delay was my bad. I didn't read the i
     conda install scikit-learn -y
     jupyter notebook
 
-It took me a while to figure out how to push this to Github. I kept getting 403's, even though I'd added a "Personal Access Token" to the URL of this project in .git/config.
-
-stackoverflow.com was worse than useless - just a load of bureaucrats deleting comments cos they're not "answers" or whatever.
+It took me a while to figure out how to push this to Github. I kept getting 403's, even though I'd added a "Personal Access Token" to the URL of this project in .git/config, as recommended in a discussion on stackoverflow.com.
 
 This site got it:
 https://mycyberuniverse.com/how-fix-fatal-authentication-failed-for-https-github-com.html
 
+Point 6, "Select the scopes, or permissions, you’d like to grant this token. To use your token to access repositories from the command line, select repo."
 
-My comment:
+finally did it for me, after weeks of useless discussion on stackoverflow, and my comments being deleted because they're not "answers", or some other bureaucratic reason.
 
-OMFG
-
-Your point 6, "Select the scopes, or permissions, you’d like to grant this token. To use your token to access repositories from the command line, select repo."
-
-finally did it for me, after weeks of useless discussion on stackoverflow, and my comments being deleted by uptight administrators cos they're not "answers", or some other f***ing bureaucratic nonsense.
-
-WTF? A "token" is just an impossible-to-remember temporary password, so you have to keep a copy of it somewhere. It's less secure.
+WTF? A "token" is just an impossible-to-remember temporary password, so you have to keep a copy of it somewhere. It's surely less secure.
